@@ -50,7 +50,7 @@ async def on_message(message):
 async def cmd_coin(client, message, arg):
     await client.send_message(message.channel, "Flipping coin..")
     await sleep(1)
-    await client.send_message(message.channel, "The coin lands on: %s" % random.choice(['Jaakko', 'Tuomas']))
+    await client.send_message(message.channel, "The coin lands on: %s" % random.choice(['Jaakko', 'Tuomas', 'Joonas', 'Vuan', 'Tommi']))
 
 commands = {
     'coin' : cmd_coin
